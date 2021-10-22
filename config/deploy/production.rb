@@ -4,7 +4,7 @@
 # You can define all roles on a single server, or split them:
 
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
-server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
+# server "ssh.lolipop", user: "chillout.jp-bananabaum", roles: %w{app web}
 # server "db.example.com", user: "deploy", roles: %w{db}
 
 
@@ -43,11 +43,12 @@ role :web, %w{ssh.lolipop}
 # Global options
 # --------------
  set :ssh_options, {
-   keys: %w(/home/user_name/.ssh/lolipo_rsa),
+   keys: %w(~/.ssh/lolipo_rsa),
    forward_agent: true,
-   auth_methods: %w(publickey)
+   auth_methods: %w(publickey),
    port: 2222
  }
+
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------

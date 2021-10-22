@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.16.0"
 
-set :application, "cap-test"
+set :application, "cap"
 set :repo_url, "https://github.com/mochi5o/cap"
 
 # Default branch is :master
@@ -9,11 +9,11 @@ ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"
-set :deploy_to, "cap-test"
+set :deploy_to, "capistrano"
 
 
 # Default value for :format is :airbrussh.
-set :format, :airbrussh
+# set :format, :airbrussh
 
 # You can configure the Airbrussh format using :format_options.
 # These are the defaults.
@@ -26,8 +26,8 @@ set :format, :airbrussh
 # append :linked_files, "config/database.yml"
 
 # Default value for linked_dirs is []
-# append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
-append :linked_dirs, "log"
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
+# append :linked_dirs, "log"
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }

@@ -1,0 +1,742 @@
+# Logfile created on 2021-10-22 21:17:01 +0900 by logger.rb/66358
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:17:01 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [1a9649c4] Running /usr/bin/env mkdir -p /tmp as deploy@example.com
+ DEBUG [1a9649c4] Command: /usr/bin/env mkdir -p /tmp
+  INFO [6261348c] Running /usr/bin/env mkdir -p /tmp on ssh.lolipop
+ DEBUG [6261348c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [c46d6e33] Running /usr/bin/env #<StringIO:0x00007fd6c10d5cd8> /tmp/git-ssh-ed88ee8a305b4cca75d5.sh on ssh.lolipop
+ DEBUG [c46d6e33] Command: /usr/bin/env #<StringIO:0x00007fd6c10d5cd8> /tmp/git-ssh-ed88ee8a305b4cca75d5.sh
+  INFO [a5af210b] Running /usr/bin/env #<StringIO:0x00007fd6c10d70d8> /tmp/git-ssh-ed88ee8a305b4cca75d5.sh as deploy@example.com
+ DEBUG [a5af210b] Command: /usr/bin/env #<StringIO:0x00007fd6c10d70d8> /tmp/git-ssh-ed88ee8a305b4cca75d5.sh
+  INFO [d6996079] Running /usr/bin/env chmod 700 /tmp/git-ssh-ed88ee8a305b4cca75d5.sh on ssh.lolipop
+ DEBUG [d6996079] Command: /usr/bin/env chmod 700 /tmp/git-ssh-ed88ee8a305b4cca75d5.sh
+  INFO [d08911ea] Running /usr/bin/env chmod 700 /tmp/git-ssh-ed88ee8a305b4cca75d5.sh as deploy@example.com
+ DEBUG [d08911ea] Command: /usr/bin/env chmod 700 /tmp/git-ssh-ed88ee8a305b4cca75d5.sh
+  INFO [3c591549] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD on ssh.lolipop
+ DEBUG [3c591549] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ed88ee8a305b4cca75d5.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+  INFO [2dd0fe32] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD as deploy@example.com
+ DEBUG [2dd0fe32] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ed88ee8a305b4cca75d5.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+  INFO [52625927] Running /usr/bin/env mkdir -p cap-test/shared cap-test/releases as deploy@example.com
+  INFO [7860488b] Running /usr/bin/env mkdir -p cap-test/shared cap-test/releases on ssh.lolipop
+ DEBUG [52625927] Command: /usr/bin/env mkdir -p cap-test/shared cap-test/releases
+ DEBUG [7860488b] Command: /usr/bin/env mkdir -p cap-test/shared cap-test/releases
+  INFO [2fd12f28] Running /usr/bin/env mkdir -p cap-test/shared/log on ssh.lolipop
+ DEBUG [2fd12f28] Command: /usr/bin/env mkdir -p cap-test/shared/log
+  INFO [52312c1c] Running /usr/bin/env mkdir -p cap-test/shared/log as deploy@example.com
+ DEBUG [52312c1c] Command: /usr/bin/env mkdir -p cap-test/shared/log
+ DEBUG [fff31794] Running [ -f cap-test/current/REVISION ] as deploy@example.com
+ DEBUG [fff31794] Command: [ -f cap-test/current/REVISION ]
+ DEBUG [df50ef49] Running /usr/bin/env cat cap-test/current/REVISION 2>/dev/null as deploy@example.com
+ DEBUG [8dbae35a] Running [ -f cap-test/current/REVISION ] on ssh.lolipop
+ DEBUG [8dbae35a] Command: [ -f cap-test/current/REVISION ]
+ DEBUG [1d48a14e] Running /usr/bin/env cat cap-test/current/REVISION 2>/dev/null on ssh.lolipop
+ DEBUG [df50ef49] Command: /usr/bin/env cat cap-test/current/REVISION 2>/dev/null
+ DEBUG [1d48a14e] Command: /usr/bin/env cat cap-test/current/REVISION 2>/dev/null
+ DEBUG [53bf9f0c] Running [ -f cap-test/repo/HEAD ] on ssh.lolipop
+ DEBUG [53bf9f0c] Command: [ -f cap-test/repo/HEAD ]
+  INFO The repository mirror is at cap-test/repo
+ DEBUG [a6b22387] Running [ -f cap-test/repo/HEAD ] as deploy@example.com
+ DEBUG [a6b22387] Command: [ -f cap-test/repo/HEAD ]
+  INFO The repository mirror is at cap-test/repo
+ DEBUG [0f7e78de] Running if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi as deploy@example.com
+ DEBUG [0f7e78de] Command: if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi
+  INFO [5ee832b0] Running /usr/bin/env git remote set-url origin https://github.com/mochi5o/cap as deploy@example.com
+ DEBUG [5ee832b0] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ed88ee8a305b4cca75d5.sh" ; /usr/bin/env git remote set-url origin https://github.com/mochi5o/cap )
+ DEBUG [318aee46] Running if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [318aee46] Command: if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi
+  INFO [6101aa97] Running /usr/bin/env git remote set-url origin https://github.com/mochi5o/cap on ssh.lolipop
+ DEBUG [6101aa97] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ed88ee8a305b4cca75d5.sh" ; /usr/bin/env git remote set-url origin https://github.com/mochi5o/cap )
+  INFO [170a53ff] Running /usr/bin/env git remote update --prune on ssh.lolipop
+ DEBUG [170a53ff] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ed88ee8a305b4cca75d5.sh" ; /usr/bin/env git remote update --prune )
+  INFO [2a358c7e] Running /usr/bin/env git remote update --prune as deploy@example.com
+ DEBUG [2a358c7e] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ed88ee8a305b4cca75d5.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [ea82be23] Running if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi as deploy@example.com
+ DEBUG [ea82be23] Command: if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi
+  INFO [43213bd0] Running /usr/bin/env mkdir -p cap-test/releases/20211022121706 as deploy@example.com
+ DEBUG [58047bd1] Running if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [58047bd1] Command: if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi
+  INFO [6868851c] Running /usr/bin/env mkdir -p cap-test/releases/20211022121706 on ssh.lolipop
+ DEBUG [6868851c] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ed88ee8a305b4cca75d5.sh" ; /usr/bin/env mkdir -p cap-test/releases/20211022121706 )
+ DEBUG [43213bd0] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ed88ee8a305b4cca75d5.sh" ; /usr/bin/env mkdir -p cap-test/releases/20211022121706 )
+  INFO [375c51ad] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C cap-test/releases/20211022121706 as deploy@example.com
+ DEBUG [375c51ad] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ed88ee8a305b4cca75d5.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C cap-test/releases/20211022121706 )
+  INFO [0d609ab7] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C cap-test/releases/20211022121706 on ssh.lolipop
+ DEBUG [0d609ab7] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ed88ee8a305b4cca75d5.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C cap-test/releases/20211022121706 )
+ DEBUG [e9b0c4c2] Running if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi as deploy@example.com
+ DEBUG [e9b0c4c2] Command: if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi
+ DEBUG [fac8f44a] Running /usr/bin/env git rev-list --max-count=1 main as deploy@example.com
+ DEBUG [64018996] Running if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [64018996] Command: if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi
+ DEBUG [fac8f44a] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ed88ee8a305b4cca75d5.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [c4b2f7c7] Running /usr/bin/env git rev-list --max-count=1 main on ssh.lolipop
+ DEBUG [c4b2f7c7] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ed88ee8a305b4cca75d5.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [7b5f8e7c] Running if test ! -d cap-test/releases/20211022121706; then echo "Directory does not exist 'cap-test/releases/20211022121706'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [7b5f8e7c] Command: if test ! -d cap-test/releases/20211022121706; then echo "Directory does not exist 'cap-test/releases/20211022121706'" 1>&2; false; fi
+  INFO [79cbf1ca] Running /usr/bin/env echo "" > REVISION on ssh.lolipop
+ DEBUG [79cbf1ca] Command: cd cap-test/releases/20211022121706 && /usr/bin/env echo "" > REVISION
+ DEBUG [7a9da228] Running if test ! -d cap-test/releases/20211022121706; then echo "Directory does not exist 'cap-test/releases/20211022121706'" 1>&2; false; fi as deploy@example.com
+ DEBUG [7a9da228] Command: if test ! -d cap-test/releases/20211022121706; then echo "Directory does not exist 'cap-test/releases/20211022121706'" 1>&2; false; fi
+  INFO [03486b58] Running /usr/bin/env echo "" > REVISION as deploy@example.com
+ DEBUG [03486b58] Command: cd cap-test/releases/20211022121706 && /usr/bin/env echo "" > REVISION
+  INFO [e84dc1c3] Running /usr/bin/env mkdir -p cap-test/releases/20211022121706 on ssh.lolipop
+ DEBUG [e84dc1c3] Command: /usr/bin/env mkdir -p cap-test/releases/20211022121706
+  INFO [5240d47e] Running /usr/bin/env mkdir -p cap-test/releases/20211022121706 as deploy@example.com
+ DEBUG [5240d47e] Command: /usr/bin/env mkdir -p cap-test/releases/20211022121706
+ DEBUG [79cc8e27] Running [ -L cap-test/releases/20211022121706/log ] as deploy@example.com
+ DEBUG [79cc8e27] Command: [ -L cap-test/releases/20211022121706/log ]
+ DEBUG [4d908809] Running [ -L cap-test/releases/20211022121706/log ] on ssh.lolipop
+ DEBUG [4d908809] Command: [ -L cap-test/releases/20211022121706/log ]
+  INFO [b04d88af] Running /usr/bin/env ln -s cap-test/releases/20211022121706 cap-test/releases/current on ssh.lolipop
+ DEBUG [b04d88af] Command: /usr/bin/env ln -s cap-test/releases/20211022121706 cap-test/releases/current
+  INFO [6e526a78] Running /usr/bin/env ln -s cap-test/releases/20211022121706 cap-test/releases/current as deploy@example.com
+ DEBUG [6e526a78] Command: /usr/bin/env ln -s cap-test/releases/20211022121706 cap-test/releases/current
+  INFO [373595d0] Running /usr/bin/env mv cap-test/releases/current cap-test as deploy@example.com
+ DEBUG [373595d0] Command: /usr/bin/env mv cap-test/releases/current cap-test
+  INFO [5e78b44a] Running /usr/bin/env mv cap-test/releases/current cap-test on ssh.lolipop
+ DEBUG [5e78b44a] Command: /usr/bin/env mv cap-test/releases/current cap-test
+ DEBUG [aea346e7] Running /usr/bin/env ls -x cap-test/releases on ssh.lolipop
+ DEBUG [aea346e7] Command: /usr/bin/env ls -x cap-test/releases
+ DEBUG [632103ed] Running /usr/bin/env ls -x cap-test/releases as deploy@example.com
+ DEBUG [632103ed] Command: /usr/bin/env ls -x cap-test/releases
+ DEBUG [922c5e4a] Running if test ! -d cap-test/releases; then echo "Directory does not exist 'cap-test/releases'" 1>&2; false; fi as deploy@example.com
+ DEBUG [922c5e4a] Command: if test ! -d cap-test/releases; then echo "Directory does not exist 'cap-test/releases'" 1>&2; false; fi
+  INFO [61c4fc0e] Running /usr/bin/env echo "Branch main (at ) deployed as release 20211022121706 by mochiko" >> cap-test/revisions.log as deploy@example.com
+ DEBUG [61c4fc0e] Command: cd cap-test/releases && /usr/bin/env echo "Branch main (at ) deployed as release 20211022121706 by mochiko" >> cap-test/revisions.log
+ DEBUG [265e7f49] Running if test ! -d cap-test/releases; then echo "Directory does not exist 'cap-test/releases'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [265e7f49] Command: if test ! -d cap-test/releases; then echo "Directory does not exist 'cap-test/releases'" 1>&2; false; fi
+  INFO [f928fd9b] Running /usr/bin/env echo "Branch main (at ) deployed as release 20211022121706 by mochiko" >> cap-test/revisions.log on ssh.lolipop
+ DEBUG [f928fd9b] Command: cd cap-test/releases && /usr/bin/env echo "Branch main (at ) deployed as release 20211022121706 by mochiko" >> cap-test/revisions.log
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:18:39 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [17db4172] Running /usr/bin/env mkdir -p /tmp as deploy@example.com
+ DEBUG [17db4172] Command: /usr/bin/env mkdir -p /tmp
+  INFO [86d20a61] Running /usr/bin/env mkdir -p /tmp on ssh.lolipop
+ DEBUG [86d20a61] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:22:08 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [65d6be63] Running /usr/bin/env mkdir -p /tmp as deploy@example.com
+ DEBUG [65d6be63] Command: /usr/bin/env mkdir -p /tmp
+  INFO [d08fe481] Running /usr/bin/env mkdir -p /tmp on ssh.lolipop
+ DEBUG [d08fe481] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ef542e3d] Running /usr/bin/env #<StringIO:0x00007f9b770f4870> /tmp/git-ssh-c60523cbde952dfe8857.sh on ssh.lolipop
+ DEBUG [ef542e3d] Command: /usr/bin/env #<StringIO:0x00007f9b770f4870> /tmp/git-ssh-c60523cbde952dfe8857.sh
+  INFO [2083c26a] Running /usr/bin/env #<StringIO:0x00007f9b770f6008> /tmp/git-ssh-c60523cbde952dfe8857.sh as deploy@example.com
+ DEBUG [2083c26a] Command: /usr/bin/env #<StringIO:0x00007f9b770f6008> /tmp/git-ssh-c60523cbde952dfe8857.sh
+  INFO [cf96b4f0] Running /usr/bin/env chmod 700 /tmp/git-ssh-c60523cbde952dfe8857.sh on ssh.lolipop
+ DEBUG [cf96b4f0] Command: /usr/bin/env chmod 700 /tmp/git-ssh-c60523cbde952dfe8857.sh
+  INFO [b16394de] Running /usr/bin/env chmod 700 /tmp/git-ssh-c60523cbde952dfe8857.sh as deploy@example.com
+ DEBUG [b16394de] Command: /usr/bin/env chmod 700 /tmp/git-ssh-c60523cbde952dfe8857.sh
+  INFO [ee41f5ed] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD as deploy@example.com
+ DEBUG [ee41f5ed] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c60523cbde952dfe8857.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+  INFO [826e1482] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD on ssh.lolipop
+ DEBUG [826e1482] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c60523cbde952dfe8857.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+  INFO [be0e1201] Running /usr/bin/env mkdir -p cap-test/shared cap-test/releases on ssh.lolipop
+ DEBUG [be0e1201] Command: /usr/bin/env mkdir -p cap-test/shared cap-test/releases
+  INFO [bc65753d] Running /usr/bin/env mkdir -p cap-test/shared cap-test/releases as deploy@example.com
+ DEBUG [bc65753d] Command: /usr/bin/env mkdir -p cap-test/shared cap-test/releases
+  INFO [b24d8092] Running /usr/bin/env mkdir -p cap-test/shared/log as deploy@example.com
+ DEBUG [b24d8092] Command: /usr/bin/env mkdir -p cap-test/shared/log
+  INFO [6b2d601d] Running /usr/bin/env mkdir -p cap-test/shared/log on ssh.lolipop
+ DEBUG [6b2d601d] Command: /usr/bin/env mkdir -p cap-test/shared/log
+ DEBUG [b577b963] Running [ -f cap-test/current/REVISION ] as deploy@example.com
+ DEBUG [b577b963] Command: [ -f cap-test/current/REVISION ]
+ DEBUG [1ed19c38] Running /usr/bin/env cat cap-test/current/REVISION 2>/dev/null as deploy@example.com
+ DEBUG [8e1139bd] Running [ -f cap-test/current/REVISION ] on ssh.lolipop
+ DEBUG [8e1139bd] Command: [ -f cap-test/current/REVISION ]
+ DEBUG [45365596] Running /usr/bin/env cat cap-test/current/REVISION 2>/dev/null on ssh.lolipop
+ DEBUG [45365596] Command: /usr/bin/env cat cap-test/current/REVISION 2>/dev/null
+ DEBUG [1ed19c38] Command: /usr/bin/env cat cap-test/current/REVISION 2>/dev/null
+ DEBUG [355da856] Running [ -f cap-test/repo/HEAD ] as deploy@example.com
+ DEBUG [355da856] Command: [ -f cap-test/repo/HEAD ]
+  INFO The repository mirror is at cap-test/repo
+ DEBUG [0c1e5963] Running [ -f cap-test/repo/HEAD ] on ssh.lolipop
+ DEBUG [0c1e5963] Command: [ -f cap-test/repo/HEAD ]
+  INFO The repository mirror is at cap-test/repo
+ DEBUG [690f5192] Running if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi as deploy@example.com
+ DEBUG [690f5192] Command: if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi
+  INFO [b314d20c] Running /usr/bin/env git remote set-url origin https://github.com/mochi5o/cap as deploy@example.com
+ DEBUG [78085562] Running if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [78085562] Command: if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi
+  INFO [9cc5324b] Running /usr/bin/env git remote set-url origin https://github.com/mochi5o/cap on ssh.lolipop
+ DEBUG [9cc5324b] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c60523cbde952dfe8857.sh" ; /usr/bin/env git remote set-url origin https://github.com/mochi5o/cap )
+ DEBUG [b314d20c] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c60523cbde952dfe8857.sh" ; /usr/bin/env git remote set-url origin https://github.com/mochi5o/cap )
+  INFO [bf725102] Running /usr/bin/env git remote update --prune as deploy@example.com
+ DEBUG [bf725102] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c60523cbde952dfe8857.sh" ; /usr/bin/env git remote update --prune )
+  INFO [801a81ca] Running /usr/bin/env git remote update --prune on ssh.lolipop
+ DEBUG [801a81ca] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c60523cbde952dfe8857.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [12600731] Running if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [12600731] Command: if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi
+  INFO [aea59b7f] Running /usr/bin/env mkdir -p cap-test/releases/20211022122211 on ssh.lolipop
+ DEBUG [aea59b7f] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c60523cbde952dfe8857.sh" ; /usr/bin/env mkdir -p cap-test/releases/20211022122211 )
+ DEBUG [1802369e] Running if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi as deploy@example.com
+ DEBUG [1802369e] Command: if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi
+  INFO [47e7f385] Running /usr/bin/env mkdir -p cap-test/releases/20211022122211 as deploy@example.com
+ DEBUG [47e7f385] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c60523cbde952dfe8857.sh" ; /usr/bin/env mkdir -p cap-test/releases/20211022122211 )
+  INFO [84aa7510] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C cap-test/releases/20211022122211 as deploy@example.com
+ DEBUG [84aa7510] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c60523cbde952dfe8857.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C cap-test/releases/20211022122211 )
+  INFO [92044524] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C cap-test/releases/20211022122211 on ssh.lolipop
+ DEBUG [92044524] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c60523cbde952dfe8857.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C cap-test/releases/20211022122211 )
+ DEBUG [70b2237e] Running if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [70b2237e] Command: if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi
+ DEBUG [71365d39] Running if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi as deploy@example.com
+ DEBUG [71365d39] Command: if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi
+ DEBUG [bfae62fe] Running /usr/bin/env git rev-list --max-count=1 main as deploy@example.com
+ DEBUG [362c4753] Running /usr/bin/env git rev-list --max-count=1 main on ssh.lolipop
+ DEBUG [362c4753] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c60523cbde952dfe8857.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [bfae62fe] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c60523cbde952dfe8857.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [cef877a3] Running if test ! -d cap-test/releases/20211022122211; then echo "Directory does not exist 'cap-test/releases/20211022122211'" 1>&2; false; fi as deploy@example.com
+ DEBUG [a21831a6] Running if test ! -d cap-test/releases/20211022122211; then echo "Directory does not exist 'cap-test/releases/20211022122211'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [a21831a6] Command: if test ! -d cap-test/releases/20211022122211; then echo "Directory does not exist 'cap-test/releases/20211022122211'" 1>&2; false; fi
+  INFO [b6e5ead7] Running /usr/bin/env echo "" > REVISION on ssh.lolipop
+ DEBUG [cef877a3] Command: if test ! -d cap-test/releases/20211022122211; then echo "Directory does not exist 'cap-test/releases/20211022122211'" 1>&2; false; fi
+ DEBUG [b6e5ead7] Command: cd cap-test/releases/20211022122211 && /usr/bin/env echo "" > REVISION
+  INFO [6dd2f52c] Running /usr/bin/env echo "" > REVISION as deploy@example.com
+ DEBUG [6dd2f52c] Command: cd cap-test/releases/20211022122211 && /usr/bin/env echo "" > REVISION
+  INFO [85952666] Running /usr/bin/env mkdir -p cap-test/releases/20211022122211 on ssh.lolipop
+ DEBUG [85952666] Command: /usr/bin/env mkdir -p cap-test/releases/20211022122211
+  INFO [fba01c7d] Running /usr/bin/env mkdir -p cap-test/releases/20211022122211 as deploy@example.com
+ DEBUG [fba01c7d] Command: /usr/bin/env mkdir -p cap-test/releases/20211022122211
+ DEBUG [ae70b40d] Running [ -L cap-test/releases/20211022122211/log ] as deploy@example.com
+ DEBUG [ae70b40d] Command: [ -L cap-test/releases/20211022122211/log ]
+ DEBUG [3b632ac1] Running [ -L cap-test/releases/20211022122211/log ] on ssh.lolipop
+ DEBUG [3b632ac1] Command: [ -L cap-test/releases/20211022122211/log ]
+  INFO [24d264b1] Running /usr/bin/env ln -s cap-test/releases/20211022122211 cap-test/releases/current as deploy@example.com
+ DEBUG [24d264b1] Command: /usr/bin/env ln -s cap-test/releases/20211022122211 cap-test/releases/current
+  INFO [e25fc990] Running /usr/bin/env ln -s cap-test/releases/20211022122211 cap-test/releases/current on ssh.lolipop
+ DEBUG [e25fc990] Command: /usr/bin/env ln -s cap-test/releases/20211022122211 cap-test/releases/current
+  INFO [fbc0a300] Running /usr/bin/env mv cap-test/releases/current cap-test on ssh.lolipop
+ DEBUG [fbc0a300] Command: /usr/bin/env mv cap-test/releases/current cap-test
+  INFO [3aa92c00] Running /usr/bin/env mv cap-test/releases/current cap-test as deploy@example.com
+ DEBUG [3aa92c00] Command: /usr/bin/env mv cap-test/releases/current cap-test
+ DEBUG [06744581] Running /usr/bin/env ls -x cap-test/releases as deploy@example.com
+ DEBUG [06744581] Command: /usr/bin/env ls -x cap-test/releases
+ DEBUG [a28a85ab] Running /usr/bin/env ls -x cap-test/releases on ssh.lolipop
+ DEBUG [a28a85ab] Command: /usr/bin/env ls -x cap-test/releases
+ DEBUG [5c407334] Running if test ! -d cap-test/releases; then echo "Directory does not exist 'cap-test/releases'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [5c407334] Command: if test ! -d cap-test/releases; then echo "Directory does not exist 'cap-test/releases'" 1>&2; false; fi
+  INFO [b8f6f4ec] Running /usr/bin/env echo "Branch main (at ) deployed as release 20211022122211 by mochiko" >> cap-test/revisions.log on ssh.lolipop
+ DEBUG [b8f6f4ec] Command: cd cap-test/releases && /usr/bin/env echo "Branch main (at ) deployed as release 20211022122211 by mochiko" >> cap-test/revisions.log
+ DEBUG [7845a64b] Running if test ! -d cap-test/releases; then echo "Directory does not exist 'cap-test/releases'" 1>&2; false; fi as deploy@example.com
+ DEBUG [7845a64b] Command: if test ! -d cap-test/releases; then echo "Directory does not exist 'cap-test/releases'" 1>&2; false; fi
+  INFO [b5742c61] Running /usr/bin/env echo "Branch main (at ) deployed as release 20211022122211 by mochiko" >> cap-test/revisions.log as deploy@example.com
+ DEBUG [b5742c61] Command: cd cap-test/releases && /usr/bin/env echo "Branch main (at ) deployed as release 20211022122211 by mochiko" >> cap-test/revisions.log
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:22:18 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8a353e5c] Running /usr/bin/env mkdir -p /tmp as deploy@example.com
+ DEBUG [8a353e5c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [d71e4d55] Running /usr/bin/env mkdir -p /tmp on ssh.lolipop
+ DEBUG [d71e4d55] Command: /usr/bin/env mkdir -p /tmp
+  INFO [d71e4d55] Finished in 0.484 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-27262d992db39d71ad56.sh 0.0%
+  INFO Uploading /tmp/git-ssh-27262d992db39d71ad56.sh 100.0%
+  INFO [4f3c81ed] Running /usr/bin/env chmod 700 /tmp/git-ssh-27262d992db39d71ad56.sh on ssh.lolipop
+ DEBUG [4f3c81ed] Command: /usr/bin/env chmod 700 /tmp/git-ssh-27262d992db39d71ad56.sh
+  INFO [4f3c81ed] Finished in 0.183 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:30:29 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [7e78684c] Running /usr/bin/env mkdir -p /tmp on ssh.lolipop
+ DEBUG [7e78684c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [7e78684c] Finished in 0.581 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-a031bdba961e3c123b03.sh 0.0%
+  INFO Uploading /tmp/git-ssh-a031bdba961e3c123b03.sh 100.0%
+  INFO [48792c60] Running /usr/bin/env chmod 700 /tmp/git-ssh-a031bdba961e3c123b03.sh on ssh.lolipop
+ DEBUG [48792c60] Command: /usr/bin/env chmod 700 /tmp/git-ssh-a031bdba961e3c123b03.sh
+  INFO [48792c60] Finished in 0.167 seconds with exit status 0 (successful).
+  INFO [3d2157ea] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD on ssh.lolipop
+ DEBUG [3d2157ea] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a031bdba961e3c123b03.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+ DEBUG [3d2157ea] 	2375fde68042bfa0971a346924035ee13649b062	HEAD
+  INFO [3d2157ea] Finished in 0.430 seconds with exit status 0 (successful).
+  INFO [4777b318] Running /usr/bin/env mkdir -p cap-test/shared cap-test/releases on ssh.lolipop
+ DEBUG [4777b318] Command: /usr/bin/env mkdir -p cap-test/shared cap-test/releases
+  INFO [4777b318] Finished in 0.135 seconds with exit status 0 (successful).
+  INFO [f0857f0c] Running /usr/bin/env mkdir -p cap-test/shared/log on ssh.lolipop
+ DEBUG [f0857f0c] Command: /usr/bin/env mkdir -p cap-test/shared/log
+  INFO [f0857f0c] Finished in 0.130 seconds with exit status 0 (successful).
+ DEBUG [6246a83a] Running [ -f cap-test/current/REVISION ] on ssh.lolipop
+ DEBUG [6246a83a] Command: [ -f cap-test/current/REVISION ]
+ DEBUG [6246a83a] Finished in 0.159 seconds with exit status 1 (failed).
+ DEBUG [3b8a3777] Running [ -f cap-test/repo/HEAD ] on ssh.lolipop
+ DEBUG [3b8a3777] Command: [ -f cap-test/repo/HEAD ]
+ DEBUG [3b8a3777] Finished in 0.171 seconds with exit status 1 (failed).
+ DEBUG [bdcc7d1a] Running if test ! -d cap-test; then echo "Directory does not exist 'cap-test'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [bdcc7d1a] Command: if test ! -d cap-test; then echo "Directory does not exist 'cap-test'" 1>&2; false; fi
+ DEBUG [bdcc7d1a] Finished in 0.167 seconds with exit status 0 (successful).
+  INFO [8d0b12f7] Running /usr/bin/env git clone --mirror https://github.com/mochi5o/cap cap-test/repo on ssh.lolipop
+ DEBUG [8d0b12f7] Command: cd cap-test && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a031bdba961e3c123b03.sh" ; /usr/bin/env git clone --mirror https://github.com/mochi5o/cap cap-test/repo )
+ DEBUG [8d0b12f7] 	Cloning into bare repository 'cap-test/repo'...
+  INFO [8d0b12f7] Finished in 0.578 seconds with exit status 0 (successful).
+ DEBUG [04717feb] Running if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [04717feb] Command: if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi
+ DEBUG [04717feb] 	Directory does not exist 'cap-test/repo'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:34:44 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [633fd05e] Running /usr/bin/env mkdir -p /tmp on ssh.lolipop
+ DEBUG [633fd05e] Command: /usr/bin/env mkdir -p /tmp
+  INFO [633fd05e] Finished in 0.551 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-5b678eb9877376da7e09.sh 0.0%
+  INFO Uploading /tmp/git-ssh-5b678eb9877376da7e09.sh 100.0%
+  INFO [31ecfac7] Running /usr/bin/env chmod 700 /tmp/git-ssh-5b678eb9877376da7e09.sh on ssh.lolipop
+ DEBUG [31ecfac7] Command: /usr/bin/env chmod 700 /tmp/git-ssh-5b678eb9877376da7e09.sh
+  INFO [31ecfac7] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [fc5d03b6] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD on ssh.lolipop
+ DEBUG [fc5d03b6] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5b678eb9877376da7e09.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+ DEBUG [fc5d03b6] 	2375fde68042bfa0971a346924035ee13649b062	HEAD
+  INFO [fc5d03b6] Finished in 0.318 seconds with exit status 0 (successful).
+  INFO [bd36e96d] Running /usr/bin/env mkdir -p cap-test/shared cap-test/releases on ssh.lolipop
+ DEBUG [bd36e96d] Command: /usr/bin/env mkdir -p cap-test/shared cap-test/releases
+  INFO [bd36e96d] Finished in 0.134 seconds with exit status 0 (successful).
+  INFO [a80158c6] Running /usr/bin/env mkdir -p cap-test/shared/log on ssh.lolipop
+ DEBUG [a80158c6] Command: /usr/bin/env mkdir -p cap-test/shared/log
+  INFO [a80158c6] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG [0ce6a65c] Running [ -f cap-test/current/REVISION ] on ssh.lolipop
+ DEBUG [0ce6a65c] Command: [ -f cap-test/current/REVISION ]
+ DEBUG [0ce6a65c] Finished in 0.140 seconds with exit status 1 (failed).
+ DEBUG [2a850788] Running [ -f cap-test/repo/HEAD ] on ssh.lolipop
+ DEBUG [2a850788] Command: [ -f cap-test/repo/HEAD ]
+ DEBUG [2a850788] Finished in 0.143 seconds with exit status 1 (failed).
+ DEBUG [1cb87722] Running if test ! -d cap-test; then echo "Directory does not exist 'cap-test'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [1cb87722] Command: if test ! -d cap-test; then echo "Directory does not exist 'cap-test'" 1>&2; false; fi
+ DEBUG [1cb87722] Finished in 0.153 seconds with exit status 0 (successful).
+  INFO [d6fcbe4b] Running /usr/bin/env git clone --mirror https://github.com/mochi5o/cap cap-test/repo on ssh.lolipop
+ DEBUG [d6fcbe4b] Command: cd cap-test && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5b678eb9877376da7e09.sh" ; /usr/bin/env git clone --mirror https://github.com/mochi5o/cap cap-test/repo )
+ DEBUG [d6fcbe4b] 	fatal: destination path 'cap-test/repo' already exists and is not an empty directory.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:35:17 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c8111ea4] Running /usr/bin/env mkdir -p /tmp on ssh.lolipop
+ DEBUG [c8111ea4] Command: /usr/bin/env mkdir -p /tmp
+  INFO [c8111ea4] Finished in 0.595 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-4c012b6a95065dee5300.sh 0.0%
+  INFO Uploading /tmp/git-ssh-4c012b6a95065dee5300.sh 100.0%
+  INFO [76cb16c2] Running /usr/bin/env chmod 700 /tmp/git-ssh-4c012b6a95065dee5300.sh on ssh.lolipop
+ DEBUG [76cb16c2] Command: /usr/bin/env chmod 700 /tmp/git-ssh-4c012b6a95065dee5300.sh
+  INFO [76cb16c2] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [2c0e8511] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD on ssh.lolipop
+ DEBUG [2c0e8511] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4c012b6a95065dee5300.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+ DEBUG [2c0e8511] 	2375fde68042bfa0971a346924035ee13649b062	HEAD
+  INFO [2c0e8511] Finished in 0.291 seconds with exit status 0 (successful).
+  INFO [239a1aca] Running /usr/bin/env mkdir -p cap-test/cap/shared cap-test/cap/releases on ssh.lolipop
+ DEBUG [239a1aca] Command: /usr/bin/env mkdir -p cap-test/cap/shared cap-test/cap/releases
+  INFO [239a1aca] Finished in 0.131 seconds with exit status 0 (successful).
+  INFO [d264d222] Running /usr/bin/env mkdir -p cap-test/cap/shared/log on ssh.lolipop
+ DEBUG [d264d222] Command: /usr/bin/env mkdir -p cap-test/cap/shared/log
+  INFO [d264d222] Finished in 0.205 seconds with exit status 0 (successful).
+ DEBUG [ff2e476c] Running [ -f cap-test/cap/current/REVISION ] on ssh.lolipop
+ DEBUG [ff2e476c] Command: [ -f cap-test/cap/current/REVISION ]
+ DEBUG [ff2e476c] Finished in 0.130 seconds with exit status 1 (failed).
+ DEBUG [b112dc58] Running [ -f cap-test/cap/repo/HEAD ] on ssh.lolipop
+ DEBUG [b112dc58] Command: [ -f cap-test/cap/repo/HEAD ]
+ DEBUG [b112dc58] Finished in 0.171 seconds with exit status 1 (failed).
+ DEBUG [e665fd83] Running if test ! -d cap-test/cap; then echo "Directory does not exist 'cap-test/cap'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [e665fd83] Command: if test ! -d cap-test/cap; then echo "Directory does not exist 'cap-test/cap'" 1>&2; false; fi
+ DEBUG [e665fd83] Finished in 0.231 seconds with exit status 0 (successful).
+  INFO [be260388] Running /usr/bin/env git clone --mirror https://github.com/mochi5o/cap cap-test/cap/repo on ssh.lolipop
+ DEBUG [be260388] Command: cd cap-test/cap && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4c012b6a95065dee5300.sh" ; /usr/bin/env git clone --mirror https://github.com/mochi5o/cap cap-test/cap/repo )
+ DEBUG [be260388] 	Cloning into bare repository 'cap-test/cap/repo'...
+  INFO [be260388] Finished in 0.619 seconds with exit status 0 (successful).
+ DEBUG [62d9750c] Running if test ! -d cap-test/cap/repo; then echo "Directory does not exist 'cap-test/cap/repo'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [62d9750c] Command: if test ! -d cap-test/cap/repo; then echo "Directory does not exist 'cap-test/cap/repo'" 1>&2; false; fi
+ DEBUG [62d9750c] 	Directory does not exist 'cap-test/cap/repo'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:36:56 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [fea7edf6] Running /usr/bin/env mkdir -p /tmp on ssh.lolipop
+ DEBUG [fea7edf6] Command: /usr/bin/env mkdir -p /tmp
+  INFO [fea7edf6] Finished in 0.523 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-b7e03b9d27ab19066e4a.sh 0.0%
+  INFO Uploading /tmp/git-ssh-b7e03b9d27ab19066e4a.sh 100.0%
+  INFO [d376ab6d] Running /usr/bin/env chmod 700 /tmp/git-ssh-b7e03b9d27ab19066e4a.sh on ssh.lolipop
+ DEBUG [d376ab6d] Command: /usr/bin/env chmod 700 /tmp/git-ssh-b7e03b9d27ab19066e4a.sh
+  INFO [d376ab6d] Finished in 0.141 seconds with exit status 0 (successful).
+  INFO [d5b61841] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD on ssh.lolipop
+ DEBUG [d5b61841] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b7e03b9d27ab19066e4a.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+ DEBUG [d5b61841] 	2375fde68042bfa0971a346924035ee13649b062	HEAD
+  INFO [d5b61841] Finished in 0.768 seconds with exit status 0 (successful).
+  INFO [fba42b38] Running /usr/bin/env mkdir -p cap-test/shared cap-test/releases on ssh.lolipop
+ DEBUG [fba42b38] Command: /usr/bin/env mkdir -p cap-test/shared cap-test/releases
+  INFO [fba42b38] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [8396b075] Running /usr/bin/env mkdir -p cap-test/shared/log on ssh.lolipop
+ DEBUG [8396b075] Command: /usr/bin/env mkdir -p cap-test/shared/log
+  INFO [8396b075] Finished in 0.142 seconds with exit status 0 (successful).
+ DEBUG [a1530318] Running [ -f cap-test/current/REVISION ] on ssh.lolipop
+ DEBUG [a1530318] Command: [ -f cap-test/current/REVISION ]
+ DEBUG [a1530318] Finished in 0.123 seconds with exit status 1 (failed).
+ DEBUG [cae7af80] Running [ -f cap-test/repo/HEAD ] on ssh.lolipop
+ DEBUG [cae7af80] Command: [ -f cap-test/repo/HEAD ]
+ DEBUG [cae7af80] Finished in 0.132 seconds with exit status 1 (failed).
+ DEBUG [0e5e7ab4] Running if test ! -d cap-test; then echo "Directory does not exist 'cap-test'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [0e5e7ab4] Command: if test ! -d cap-test; then echo "Directory does not exist 'cap-test'" 1>&2; false; fi
+ DEBUG [0e5e7ab4] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [a4f1d0db] Running /usr/bin/env git clone --mirror https://github.com/mochi5o/cap cap-test/repo on ssh.lolipop
+ DEBUG [a4f1d0db] Command: cd cap-test && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b7e03b9d27ab19066e4a.sh" ; /usr/bin/env git clone --mirror https://github.com/mochi5o/cap cap-test/repo )
+ DEBUG [a4f1d0db] 	fatal: destination path 'cap-test/repo' already exists and is not an empty directory.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:39:50 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a4167965] Running /usr/bin/env mkdir -p /tmp on ssh.lolipop
+ DEBUG [a4167965] Command: /usr/bin/env mkdir -p /tmp
+  INFO [a4167965] Finished in 0.522 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-d4ba43c89c542c08a120.sh 0.0%
+  INFO Uploading /tmp/git-ssh-d4ba43c89c542c08a120.sh 100.0%
+  INFO [41ee57c4] Running /usr/bin/env chmod 700 /tmp/git-ssh-d4ba43c89c542c08a120.sh on ssh.lolipop
+ DEBUG [41ee57c4] Command: /usr/bin/env chmod 700 /tmp/git-ssh-d4ba43c89c542c08a120.sh
+  INFO [41ee57c4] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [d141f4d7] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD on ssh.lolipop
+ DEBUG [d141f4d7] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d4ba43c89c542c08a120.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+ DEBUG [d141f4d7] 	2375fde68042bfa0971a346924035ee13649b062	HEAD
+  INFO [d141f4d7] Finished in 0.413 seconds with exit status 0 (successful).
+  INFO [5d38816d] Running /usr/bin/env mkdir -p cap-test/shared cap-test/releases on ssh.lolipop
+ DEBUG [5d38816d] Command: /usr/bin/env mkdir -p cap-test/shared cap-test/releases
+  INFO [5d38816d] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [9553721a] Running /usr/bin/env mkdir -p cap-test/shared/log on ssh.lolipop
+ DEBUG [9553721a] Command: /usr/bin/env mkdir -p cap-test/shared/log
+  INFO [9553721a] Finished in 0.218 seconds with exit status 0 (successful).
+ DEBUG [2cee8db4] Running [ -f cap-test/current/REVISION ] on ssh.lolipop
+ DEBUG [2cee8db4] Command: [ -f cap-test/current/REVISION ]
+ DEBUG [2cee8db4] Finished in 0.204 seconds with exit status 1 (failed).
+ DEBUG [9f97874c] Running [ -f cap-test/repo/HEAD ] on ssh.lolipop
+ DEBUG [9f97874c] Command: [ -f cap-test/repo/HEAD ]
+ DEBUG [9f97874c] Finished in 0.133 seconds with exit status 1 (failed).
+ DEBUG [c7fb336f] Running if test ! -d cap-test; then echo "Directory does not exist 'cap-test'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [c7fb336f] Command: if test ! -d cap-test; then echo "Directory does not exist 'cap-test'" 1>&2; false; fi
+ DEBUG [c7fb336f] Finished in 0.183 seconds with exit status 0 (successful).
+  INFO [cb490538] Running /usr/bin/env git clone --mirror https://github.com/mochi5o/cap cap-test/repo on ssh.lolipop
+ DEBUG [cb490538] Command: cd cap-test && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d4ba43c89c542c08a120.sh" ; /usr/bin/env git clone --mirror https://github.com/mochi5o/cap cap-test/repo )
+ DEBUG [cb490538] 	Cloning into bare repository 'cap-test/repo'...
+  INFO [cb490538] Finished in 0.647 seconds with exit status 0 (successful).
+ DEBUG [e19d0e4c] Running if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [e19d0e4c] Command: if test ! -d cap-test/repo; then echo "Directory does not exist 'cap-test/repo'" 1>&2; false; fi
+ DEBUG [e19d0e4c] Finished in 0.085 seconds with exit status 0 (successful).
+  INFO [02582675] Running /usr/bin/env git remote set-url origin https://github.com/mochi5o/cap on ssh.lolipop
+ DEBUG [02582675] Command: cd cap-test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d4ba43c89c542c08a120.sh" ; /usr/bin/env git remote set-url origin https://github.com/mochi5o/cap )
+ DEBUG [02582675] 	fatal: Not a git repository (or any parent up to mount point /home/users/0/chillout.jp-bananabaum)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:40:53 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [cf2f3eba] Running /usr/bin/env mkdir -p /tmp on ssh.lolipop
+ DEBUG [cf2f3eba] Command: /usr/bin/env mkdir -p /tmp
+  INFO [cf2f3eba] Finished in 0.577 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-00118aedff99a1c78af5.sh 0.0%
+  INFO Uploading /tmp/git-ssh-00118aedff99a1c78af5.sh 100.0%
+  INFO [d7af5976] Running /usr/bin/env chmod 700 /tmp/git-ssh-00118aedff99a1c78af5.sh on ssh.lolipop
+ DEBUG [d7af5976] Command: /usr/bin/env chmod 700 /tmp/git-ssh-00118aedff99a1c78af5.sh
+  INFO [d7af5976] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [1efb9eb6] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD on ssh.lolipop
+ DEBUG [1efb9eb6] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-00118aedff99a1c78af5.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+ DEBUG [1efb9eb6] 	2375fde68042bfa0971a346924035ee13649b062	HEAD
+  INFO [1efb9eb6] Finished in 0.313 seconds with exit status 0 (successful).
+  INFO [5768ce87] Running /usr/bin/env mkdir -p var/www/shared var/www/releases on ssh.lolipop
+ DEBUG [5768ce87] Command: /usr/bin/env mkdir -p var/www/shared var/www/releases
+  INFO [5768ce87] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [3c0f8d04] Running /usr/bin/env mkdir -p var/www/shared/log on ssh.lolipop
+ DEBUG [3c0f8d04] Command: /usr/bin/env mkdir -p var/www/shared/log
+  INFO [3c0f8d04] Finished in 0.133 seconds with exit status 0 (successful).
+ DEBUG [62640fdf] Running [ -f var/www/current/REVISION ] on ssh.lolipop
+ DEBUG [62640fdf] Command: [ -f var/www/current/REVISION ]
+ DEBUG [62640fdf] Finished in 0.136 seconds with exit status 1 (failed).
+ DEBUG [3361eee9] Running [ -f var/www/repo/HEAD ] on ssh.lolipop
+ DEBUG [3361eee9] Command: [ -f var/www/repo/HEAD ]
+ DEBUG [3361eee9] Finished in 0.128 seconds with exit status 1 (failed).
+ DEBUG [b0a477eb] Running if test ! -d var/www/; then echo "Directory does not exist 'var/www/'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [b0a477eb] Command: if test ! -d var/www/; then echo "Directory does not exist 'var/www/'" 1>&2; false; fi
+ DEBUG [b0a477eb] Finished in 0.134 seconds with exit status 0 (successful).
+  INFO [b7c63051] Running /usr/bin/env git clone --mirror https://github.com/mochi5o/cap var/www/repo on ssh.lolipop
+ DEBUG [b7c63051] Command: cd var/www/ && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-00118aedff99a1c78af5.sh" ; /usr/bin/env git clone --mirror https://github.com/mochi5o/cap var/www/repo )
+ DEBUG [b7c63051] 	Cloning into bare repository 'var/www/repo'...
+  INFO [b7c63051] Finished in 0.586 seconds with exit status 0 (successful).
+ DEBUG [4c0da828] Running if test ! -d var/www/repo; then echo "Directory does not exist 'var/www/repo'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [4c0da828] Command: if test ! -d var/www/repo; then echo "Directory does not exist 'var/www/repo'" 1>&2; false; fi
+ DEBUG [4c0da828] 	Directory does not exist 'var/www/repo'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:43:27 +0900 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [cc9274fb] Running /usr/bin/env mkdir -p /tmp on ssh.lolipop
+ DEBUG [cc9274fb] Command: /usr/bin/env mkdir -p /tmp
+  INFO [cc9274fb] Finished in 0.551 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ae333530953b0b963370.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ae333530953b0b963370.sh 100.0%
+  INFO [c947128f] Running /usr/bin/env chmod 700 /tmp/git-ssh-ae333530953b0b963370.sh on ssh.lolipop
+ DEBUG [c947128f] Command: /usr/bin/env chmod 700 /tmp/git-ssh-ae333530953b0b963370.sh
+  INFO [c947128f] Finished in 0.176 seconds with exit status 0 (successful).
+  INFO [57afa442] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD on ssh.lolipop
+ DEBUG [57afa442] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ae333530953b0b963370.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+ DEBUG [57afa442] 	2375fde68042bfa0971a346924035ee13649b062	HEAD
+  INFO [57afa442] Finished in 0.525 seconds with exit status 0 (successful).
+  INFO [7b0ff92d] Running /usr/bin/env mkdir -p var/www/shared var/www/releases on ssh.lolipop
+ DEBUG [7b0ff92d] Command: /usr/bin/env mkdir -p var/www/shared var/www/releases
+  INFO [7b0ff92d] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [78b20b48] Running /usr/bin/env mkdir -p var/www/shared/log on ssh.lolipop
+ DEBUG [78b20b48] Command: /usr/bin/env mkdir -p var/www/shared/log
+  INFO [78b20b48] Finished in 0.229 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:45:30 +0900 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [b8a828cd] Running /usr/bin/env mkdir -p /tmp as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [b8a828cd] Command: /usr/bin/env mkdir -p /tmp
+  INFO [b8a828cd] Finished in 0.717 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-3e9c86f18f0ce23b1679.sh 0.0%
+  INFO Uploading /tmp/git-ssh-3e9c86f18f0ce23b1679.sh 100.0%
+  INFO [9f63bff7] Running /usr/bin/env chmod 700 /tmp/git-ssh-3e9c86f18f0ce23b1679.sh as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [9f63bff7] Command: /usr/bin/env chmod 700 /tmp/git-ssh-3e9c86f18f0ce23b1679.sh
+  INFO [9f63bff7] Finished in 0.200 seconds with exit status 0 (successful).
+  INFO [28d2bcf0] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [28d2bcf0] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3e9c86f18f0ce23b1679.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+ DEBUG [28d2bcf0] 	2375fde68042bfa0971a346924035ee13649b062	HEAD
+  INFO [28d2bcf0] Finished in 0.467 seconds with exit status 0 (successful).
+  INFO [1595838e] Running /usr/bin/env mkdir -p var/www/shared var/www/releases as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [1595838e] Command: /usr/bin/env mkdir -p var/www/shared var/www/releases
+  INFO [1595838e] Finished in 0.174 seconds with exit status 0 (successful).
+  INFO [be6aa8a3] Running /usr/bin/env mkdir -p var/www/shared/log as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [be6aa8a3] Command: /usr/bin/env mkdir -p var/www/shared/log
+  INFO [be6aa8a3] Finished in 0.190 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:45:36 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [ff8d090c] Running /usr/bin/env mkdir -p /tmp as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [ff8d090c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ff8d090c] Finished in 0.697 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-548bd96623bab89bcf6d.sh 0.0%
+  INFO Uploading /tmp/git-ssh-548bd96623bab89bcf6d.sh 100.0%
+  INFO [dd2b1f47] Running /usr/bin/env chmod 700 /tmp/git-ssh-548bd96623bab89bcf6d.sh as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [dd2b1f47] Command: /usr/bin/env chmod 700 /tmp/git-ssh-548bd96623bab89bcf6d.sh
+  INFO [dd2b1f47] Finished in 0.197 seconds with exit status 0 (successful).
+  INFO [f325173b] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [f325173b] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-548bd96623bab89bcf6d.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+ DEBUG [f325173b] 	2375fde68042bfa0971a346924035ee13649b062	HEAD
+  INFO [f325173b] Finished in 0.348 seconds with exit status 0 (successful).
+  INFO [327df53f] Running /usr/bin/env mkdir -p var/www/shared var/www/releases as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [327df53f] Command: /usr/bin/env mkdir -p var/www/shared var/www/releases
+  INFO [327df53f] Finished in 0.206 seconds with exit status 0 (successful).
+  INFO [6b4f0197] Running /usr/bin/env mkdir -p var/www/shared/log as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [6b4f0197] Command: /usr/bin/env mkdir -p var/www/shared/log
+  INFO [6b4f0197] Finished in 0.245 seconds with exit status 0 (successful).
+ DEBUG [c4cea32e] Running [ -f var/www/current/REVISION ] as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [c4cea32e] Command: [ -f var/www/current/REVISION ]
+ DEBUG [c4cea32e] Finished in 0.207 seconds with exit status 1 (failed).
+ DEBUG [6630cc7b] Running [ -f var/www/repo/HEAD ] as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [6630cc7b] Command: [ -f var/www/repo/HEAD ]
+ DEBUG [6630cc7b] Finished in 0.149 seconds with exit status 1 (failed).
+ DEBUG [b36db653] Running if test ! -d var/www/; then echo "Directory does not exist 'var/www/'" 1>&2; false; fi as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [b36db653] Command: if test ! -d var/www/; then echo "Directory does not exist 'var/www/'" 1>&2; false; fi
+ DEBUG [b36db653] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [46e128cd] Running /usr/bin/env git clone --mirror https://github.com/mochi5o/cap var/www/repo as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [46e128cd] Command: cd var/www/ && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-548bd96623bab89bcf6d.sh" ; /usr/bin/env git clone --mirror https://github.com/mochi5o/cap var/www/repo )
+ DEBUG [46e128cd] 	fatal: destination path 'var/www/repo' already exists and is not an empty directory.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:47:12 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [6187f238] Running /usr/bin/env mkdir -p /tmp as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [6187f238] Command: /usr/bin/env mkdir -p /tmp
+  INFO [6187f238] Finished in 0.477 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-e432b368f99c0c7d60c6.sh 0.0%
+  INFO Uploading /tmp/git-ssh-e432b368f99c0c7d60c6.sh 100.0%
+  INFO [de90a17d] Running /usr/bin/env chmod 700 /tmp/git-ssh-e432b368f99c0c7d60c6.sh as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [de90a17d] Command: /usr/bin/env chmod 700 /tmp/git-ssh-e432b368f99c0c7d60c6.sh
+  INFO [de90a17d] Finished in 0.133 seconds with exit status 0 (successful).
+  INFO [deea7f1c] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [deea7f1c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e432b368f99c0c7d60c6.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+ DEBUG [deea7f1c] 	2375fde68042bfa0971a346924035ee13649b062	HEAD
+  INFO [deea7f1c] Finished in 0.287 seconds with exit status 0 (successful).
+  INFO [6d05db6e] Running /usr/bin/env mkdir -p capistrano/shared capistrano/releases as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [6d05db6e] Command: /usr/bin/env mkdir -p capistrano/shared capistrano/releases
+  INFO [6d05db6e] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [1d2d7f9c] Running /usr/bin/env mkdir -p capistrano/shared/log as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [1d2d7f9c] Command: /usr/bin/env mkdir -p capistrano/shared/log
+  INFO [1d2d7f9c] Finished in 0.136 seconds with exit status 0 (successful).
+ DEBUG [3145f39a] Running [ -f capistrano/current/REVISION ] as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [3145f39a] Command: [ -f capistrano/current/REVISION ]
+ DEBUG [3145f39a] Finished in 0.127 seconds with exit status 1 (failed).
+ DEBUG [7be88796] Running [ -f capistrano/repo/HEAD ] as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [7be88796] Command: [ -f capistrano/repo/HEAD ]
+ DEBUG [7be88796] Finished in 0.130 seconds with exit status 1 (failed).
+ DEBUG [34c92ffa] Running if test ! -d capistrano; then echo "Directory does not exist 'capistrano'" 1>&2; false; fi as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [34c92ffa] Command: if test ! -d capistrano; then echo "Directory does not exist 'capistrano'" 1>&2; false; fi
+ DEBUG [34c92ffa] Finished in 0.133 seconds with exit status 0 (successful).
+  INFO [ae3b10f0] Running /usr/bin/env git clone --mirror https://github.com/mochi5o/cap capistrano/repo as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [ae3b10f0] Command: cd capistrano && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e432b368f99c0c7d60c6.sh" ; /usr/bin/env git clone --mirror https://github.com/mochi5o/cap capistrano/repo )
+ DEBUG [ae3b10f0] 	Cloning into bare repository 'capistrano/repo'...
+  INFO [ae3b10f0] Finished in 0.565 seconds with exit status 0 (successful).
+ DEBUG [8c541de9] Running if test ! -d capistrano/repo; then echo "Directory does not exist 'capistrano/repo'" 1>&2; false; fi as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [8c541de9] Command: if test ! -d capistrano/repo; then echo "Directory does not exist 'capistrano/repo'" 1>&2; false; fi
+ DEBUG [8c541de9] 	Directory does not exist 'capistrano/repo'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:49:56 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8cbb2e90] Running /usr/bin/env mkdir -p /tmp as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [8cbb2e90] Command: /usr/bin/env mkdir -p /tmp
+  INFO [8cbb2e90] Finished in 0.502 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-065c5f375672f05fbd1d.sh 0.0%
+  INFO Uploading /tmp/git-ssh-065c5f375672f05fbd1d.sh 100.0%
+  INFO [1edf0e8f] Running /usr/bin/env chmod 700 /tmp/git-ssh-065c5f375672f05fbd1d.sh as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [1edf0e8f] Command: /usr/bin/env chmod 700 /tmp/git-ssh-065c5f375672f05fbd1d.sh
+  INFO [1edf0e8f] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [0ab4e3bd] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [0ab4e3bd] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-065c5f375672f05fbd1d.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+ DEBUG [0ab4e3bd] 	2375fde68042bfa0971a346924035ee13649b062	HEAD
+  INFO [0ab4e3bd] Finished in 0.552 seconds with exit status 0 (successful).
+  INFO [32c8a69f] Running /usr/bin/env mkdir -p capistrano/shared capistrano/releases as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [32c8a69f] Command: /usr/bin/env mkdir -p capistrano/shared capistrano/releases
+  INFO [32c8a69f] Finished in 0.133 seconds with exit status 0 (successful).
+  INFO [11d2695e] Running /usr/bin/env mkdir -p capistrano/shared/log capistrano/shared/tmp/pids capistrano/shared/tmp/cache capistrano/shared/tmp/sockets capistrano/shared/public/system as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [11d2695e] Command: /usr/bin/env mkdir -p capistrano/shared/log capistrano/shared/tmp/pids capistrano/shared/tmp/cache capistrano/shared/tmp/sockets capistrano/shared/public/system
+  INFO [11d2695e] Finished in 0.142 seconds with exit status 0 (successful).
+ DEBUG [5e60d3c4] Running [ -f capistrano/current/REVISION ] as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [5e60d3c4] Command: [ -f capistrano/current/REVISION ]
+ DEBUG [5e60d3c4] Finished in 0.127 seconds with exit status 1 (failed).
+ DEBUG [7e024cbe] Running [ -f capistrano/repo/HEAD ] as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [7e024cbe] Command: [ -f capistrano/repo/HEAD ]
+ DEBUG [7e024cbe] Finished in 0.123 seconds with exit status 1 (failed).
+ DEBUG [5e277f53] Running if test ! -d capistrano; then echo "Directory does not exist 'capistrano'" 1>&2; false; fi as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [5e277f53] Command: if test ! -d capistrano; then echo "Directory does not exist 'capistrano'" 1>&2; false; fi
+ DEBUG [5e277f53] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [c171275d] Running /usr/bin/env git clone --mirror https://github.com/mochi5o/cap capistrano/repo as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [c171275d] Command: cd capistrano && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-065c5f375672f05fbd1d.sh" ; /usr/bin/env git clone --mirror https://github.com/mochi5o/cap capistrano/repo )
+ DEBUG [c171275d] 	fatal: destination path 'capistrano/repo' already exists and is not an empty directory.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:51:02 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8a92b1e5] Running /usr/bin/env mkdir -p /tmp as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [8a92b1e5] Command: /usr/bin/env mkdir -p /tmp
+  INFO [8a92b1e5] Finished in 0.618 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-8f4e258660956307fe26.sh 0.0%
+  INFO Uploading /tmp/git-ssh-8f4e258660956307fe26.sh 100.0%
+  INFO [663d0e0b] Running /usr/bin/env chmod 700 /tmp/git-ssh-8f4e258660956307fe26.sh as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [663d0e0b] Command: /usr/bin/env chmod 700 /tmp/git-ssh-8f4e258660956307fe26.sh
+  INFO [663d0e0b] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [22ee9574] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [22ee9574] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-8f4e258660956307fe26.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+ DEBUG [22ee9574] 	2375fde68042bfa0971a346924035ee13649b062	HEAD
+  INFO [22ee9574] Finished in 0.298 seconds with exit status 0 (successful).
+  INFO [15d0d5bc] Running /usr/bin/env mkdir -p capistrano/shared capistrano/releases as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [15d0d5bc] Command: /usr/bin/env mkdir -p capistrano/shared capistrano/releases
+  INFO [15d0d5bc] Finished in 0.185 seconds with exit status 0 (successful).
+  INFO [d93f1414] Running /usr/bin/env mkdir -p capistrano/shared/log capistrano/shared/tmp/pids capistrano/shared/tmp/cache capistrano/shared/tmp/sockets capistrano/shared/public/system as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [d93f1414] Command: /usr/bin/env mkdir -p capistrano/shared/log capistrano/shared/tmp/pids capistrano/shared/tmp/cache capistrano/shared/tmp/sockets capistrano/shared/public/system
+  INFO [d93f1414] Finished in 0.137 seconds with exit status 0 (successful).
+ DEBUG [cc6e75a7] Running [ -f capistrano/current/REVISION ] as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [cc6e75a7] Command: [ -f capistrano/current/REVISION ]
+ DEBUG [cc6e75a7] Finished in 0.129 seconds with exit status 1 (failed).
+ DEBUG [50d32fad] Running [ -f capistrano/repo/HEAD ] as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [50d32fad] Command: [ -f capistrano/repo/HEAD ]
+ DEBUG [50d32fad] Finished in 0.125 seconds with exit status 1 (failed).
+ DEBUG [417472fd] Running if test ! -d capistrano; then echo "Directory does not exist 'capistrano'" 1>&2; false; fi as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [417472fd] Command: if test ! -d capistrano; then echo "Directory does not exist 'capistrano'" 1>&2; false; fi
+ DEBUG [417472fd] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [e518ad8c] Running /usr/bin/env git clone --mirror https://github.com/mochi5o/cap capistrano/repo as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [e518ad8c] Command: cd capistrano && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-8f4e258660956307fe26.sh" ; /usr/bin/env git clone --mirror https://github.com/mochi5o/cap capistrano/repo )
+ DEBUG [e518ad8c] 	Cloning into bare repository 'capistrano/repo'...
+  INFO [e518ad8c] Finished in 0.593 seconds with exit status 0 (successful).
+ DEBUG [8d52561d] Running if test ! -d capistrano/repo; then echo "Directory does not exist 'capistrano/repo'" 1>&2; false; fi as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [8d52561d] Command: if test ! -d capistrano/repo; then echo "Directory does not exist 'capistrano/repo'" 1>&2; false; fi
+ DEBUG [8d52561d] 	Directory does not exist 'capistrano/repo'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:54:52 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [9d1eb3a2] Running /usr/bin/env mkdir -p /tmp as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [9d1eb3a2] Command: /usr/bin/env mkdir -p /tmp
+  INFO [9d1eb3a2] Finished in 0.606 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-3a08ccde348948b06983.sh 0.0%
+  INFO Uploading /tmp/git-ssh-3a08ccde348948b06983.sh 100.0%
+  INFO [46ef7eaf] Running /usr/bin/env chmod 700 /tmp/git-ssh-3a08ccde348948b06983.sh as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [46ef7eaf] Command: /usr/bin/env chmod 700 /tmp/git-ssh-3a08ccde348948b06983.sh
+  INFO [46ef7eaf] Finished in 0.155 seconds with exit status 0 (successful).
+  INFO [6ca9359b] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [6ca9359b] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3a08ccde348948b06983.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+ DEBUG [6ca9359b] 	2375fde68042bfa0971a346924035ee13649b062	HEAD
+  INFO [6ca9359b] Finished in 0.299 seconds with exit status 0 (successful).
+  INFO [740d144e] Running /usr/bin/env mkdir -p capistrano/shared capistrano/releases as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [740d144e] Command: /usr/bin/env mkdir -p capistrano/shared capistrano/releases
+  INFO [740d144e] Finished in 0.132 seconds with exit status 0 (successful).
+  INFO [eee9da20] Running /usr/bin/env mkdir -p capistrano/shared/log capistrano/shared/tmp/pids capistrano/shared/tmp/cache capistrano/shared/tmp/sockets capistrano/shared/public/system as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [eee9da20] Command: /usr/bin/env mkdir -p capistrano/shared/log capistrano/shared/tmp/pids capistrano/shared/tmp/cache capistrano/shared/tmp/sockets capistrano/shared/public/system
+  INFO [eee9da20] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [9daa56d6] Running [ -f capistrano/current/REVISION ] as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [9daa56d6] Command: [ -f capistrano/current/REVISION ]
+ DEBUG [9daa56d6] Finished in 0.133 seconds with exit status 1 (failed).
+ DEBUG [8a81b99e] Running [ -f capistrano/repo/HEAD ] as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [8a81b99e] Command: [ -f capistrano/repo/HEAD ]
+ DEBUG [8a81b99e] Finished in 0.128 seconds with exit status 1 (failed).
+ DEBUG [6de4f1be] Running if test ! -d capistrano; then echo "Directory does not exist 'capistrano'" 1>&2; false; fi as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [6de4f1be] Command: if test ! -d capistrano; then echo "Directory does not exist 'capistrano'" 1>&2; false; fi
+ DEBUG [6de4f1be] Finished in 0.133 seconds with exit status 0 (successful).
+  INFO [953be195] Running /usr/bin/env git clone --mirror https://github.com/mochi5o/cap capistrano/repo as chillout.jp-bananabaum@ssh.lolipop
+ DEBUG [953be195] Command: cd capistrano && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3a08ccde348948b06983.sh" ; /usr/bin/env git clone --mirror https://github.com/mochi5o/cap capistrano/repo )
+ DEBUG [953be195] 	fatal: destination path 'capistrano/repo' already exists and is not an empty directory.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:58:45 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [dc810eec] Running /usr/bin/env mkdir -p /tmp on ssh.lolipop
+ DEBUG [dc810eec] Command: /usr/bin/env mkdir -p /tmp
+  INFO [dc810eec] Finished in 0.512 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-b9692a53705b136d0aac.sh 0.0%
+  INFO Uploading /tmp/git-ssh-b9692a53705b136d0aac.sh 100.0%
+  INFO [8675fbce] Running /usr/bin/env chmod 700 /tmp/git-ssh-b9692a53705b136d0aac.sh on ssh.lolipop
+ DEBUG [8675fbce] Command: /usr/bin/env chmod 700 /tmp/git-ssh-b9692a53705b136d0aac.sh
+  INFO [8675fbce] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [bf4e98c0] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD on ssh.lolipop
+ DEBUG [bf4e98c0] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b9692a53705b136d0aac.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+ DEBUG [bf4e98c0] 	2375fde68042bfa0971a346924035ee13649b062	HEAD
+  INFO [bf4e98c0] Finished in 0.426 seconds with exit status 0 (successful).
+  INFO [85b23839] Running /usr/bin/env mkdir -p capistrano/shared capistrano/releases on ssh.lolipop
+ DEBUG [85b23839] Command: /usr/bin/env mkdir -p capistrano/shared capistrano/releases
+  INFO [85b23839] Finished in 0.136 seconds with exit status 0 (successful).
+  INFO [97bc9679] Running /usr/bin/env mkdir -p capistrano/shared/log capistrano/shared/tmp/pids capistrano/shared/tmp/cache capistrano/shared/tmp/sockets capistrano/shared/public/system on ssh.lolipop
+ DEBUG [97bc9679] Command: /usr/bin/env mkdir -p capistrano/shared/log capistrano/shared/tmp/pids capistrano/shared/tmp/cache capistrano/shared/tmp/sockets capistrano/shared/public/system
+  INFO [97bc9679] Finished in 0.126 seconds with exit status 0 (successful).
+ DEBUG [7511d114] Running [ -f capistrano/current/REVISION ] on ssh.lolipop
+ DEBUG [7511d114] Command: [ -f capistrano/current/REVISION ]
+ DEBUG [7511d114] Finished in 0.125 seconds with exit status 1 (failed).
+ DEBUG [0abd39ac] Running [ -f capistrano/repo/HEAD ] on ssh.lolipop
+ DEBUG [0abd39ac] Command: [ -f capistrano/repo/HEAD ]
+ DEBUG [0abd39ac] Finished in 0.132 seconds with exit status 1 (failed).
+ DEBUG [97d02c58] Running if test ! -d capistrano; then echo "Directory does not exist 'capistrano'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [97d02c58] Command: if test ! -d capistrano; then echo "Directory does not exist 'capistrano'" 1>&2; false; fi
+ DEBUG [97d02c58] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [113a3821] Running /usr/bin/env git clone --mirror https://github.com/mochi5o/cap capistrano/repo on ssh.lolipop
+ DEBUG [113a3821] Command: cd capistrano && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b9692a53705b136d0aac.sh" ; /usr/bin/env git clone --mirror https://github.com/mochi5o/cap capistrano/repo )
+ DEBUG [113a3821] 	Cloning into bare repository 'capistrano/repo'...
+  INFO [113a3821] Finished in 0.578 seconds with exit status 0 (successful).
+ DEBUG [3aaee323] Running if test ! -d capistrano/repo; then echo "Directory does not exist 'capistrano/repo'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [3aaee323] Command: if test ! -d capistrano/repo; then echo "Directory does not exist 'capistrano/repo'" 1>&2; false; fi
+ DEBUG [3aaee323] 	Directory does not exist 'capistrano/repo'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-22 21:59:56 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [154f8878] Running /usr/bin/env mkdir -p /tmp on ssh.lolipop
+ DEBUG [154f8878] Command: /usr/bin/env mkdir -p /tmp
+  INFO [154f8878] Finished in 0.528 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-7072c28d0d6fcd151acc.sh 0.0%
+  INFO Uploading /tmp/git-ssh-7072c28d0d6fcd151acc.sh 100.0%
+  INFO [300282a5] Running /usr/bin/env chmod 700 /tmp/git-ssh-7072c28d0d6fcd151acc.sh on ssh.lolipop
+ DEBUG [300282a5] Command: /usr/bin/env chmod 700 /tmp/git-ssh-7072c28d0d6fcd151acc.sh
+  INFO [300282a5] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [60890a8c] Running /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD on ssh.lolipop
+ DEBUG [60890a8c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7072c28d0d6fcd151acc.sh" ; /usr/bin/env git ls-remote https://github.com/mochi5o/cap HEAD )
+ DEBUG [60890a8c] 	2375fde68042bfa0971a346924035ee13649b062	HEAD
+  INFO [60890a8c] Finished in 0.413 seconds with exit status 0 (successful).
+  INFO [f5d692af] Running /usr/bin/env mkdir -p capistrano/shared capistrano/releases on ssh.lolipop
+ DEBUG [f5d692af] Command: /usr/bin/env mkdir -p capistrano/shared capistrano/releases
+  INFO [f5d692af] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [91f0e7e8] Running /usr/bin/env mkdir -p capistrano/shared/log capistrano/shared/tmp/pids capistrano/shared/tmp/cache capistrano/shared/tmp/sockets capistrano/shared/public/system on ssh.lolipop
+ DEBUG [91f0e7e8] Command: /usr/bin/env mkdir -p capistrano/shared/log capistrano/shared/tmp/pids capistrano/shared/tmp/cache capistrano/shared/tmp/sockets capistrano/shared/public/system
+  INFO [91f0e7e8] Finished in 0.125 seconds with exit status 0 (successful).
+ DEBUG [16e2f4af] Running [ -f capistrano/current/REVISION ] on ssh.lolipop
+ DEBUG [16e2f4af] Command: [ -f capistrano/current/REVISION ]
+ DEBUG [16e2f4af] Finished in 0.129 seconds with exit status 1 (failed).
+ DEBUG [06b42f5b] Running [ -f capistrano/repo/HEAD ] on ssh.lolipop
+ DEBUG [06b42f5b] Command: [ -f capistrano/repo/HEAD ]
+ DEBUG [06b42f5b] Finished in 0.126 seconds with exit status 1 (failed).
+ DEBUG [f078b800] Running if test ! -d capistrano; then echo "Directory does not exist 'capistrano'" 1>&2; false; fi on ssh.lolipop
+ DEBUG [f078b800] Command: if test ! -d capistrano; then echo "Directory does not exist 'capistrano'" 1>&2; false; fi
+ DEBUG [f078b800] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [f995f7a2] Running /usr/bin/env git clone --mirror https://github.com/mochi5o/cap capistrano/repo on ssh.lolipop
+ DEBUG [f995f7a2] Command: cd capistrano && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7072c28d0d6fcd151acc.sh" ; /usr/bin/env git clone --mirror https://github.com/mochi5o/cap capistrano/repo )
+ DEBUG [f995f7a2] 	fatal: destination path 'capistrano/repo' already exists and is not an empty directory.
